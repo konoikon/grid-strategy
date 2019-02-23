@@ -59,13 +59,3 @@ figures"). This would be no harder to implement
 in terms of the creation of such strategies, but 
 may be harder to work with since it would 
 necessarily spawn axes across multiple figures.
-
-Implementation
---------------
-
-- [ ] An abstract `GridStrategy` base class should be designed such that instances of `GridStrategy` can be used to populate a grid.
-- [ ] Standard `GridStrategy` subclasses should be provided that will cover the common use cases.
-    - [ ] `Squarish` (name to be decided)
-    - [ ] `Rectangular`
-- [ ] A basic function should be created that populates a gridspec from the number of plots and an object (e.g. `subplots_from_strategy(n, grid_strategy, fig=None, **kwargs)`).
-- [ ] Wrapper functions for the standard subclasses should be created (e.g. `square_layout(n, fig=None, **kwargs)`, `rectangle_layout(n, fig=None, **kwargs)`) that doesn't require instantiation of the explicit object.
